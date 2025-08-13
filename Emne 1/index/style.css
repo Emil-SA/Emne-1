@@ -1,0 +1,50 @@
+        .green{
+            color: rgb(23, 124, 36); 
+            
+        }
+         h1.green{
+             background-color: rgba(0, 0, 0, 0.274);
+             text-align: center;
+             font-size: 50px;
+             font-family: 'Times New Roman', Times, serif;
+        }
+
+        #undertxt{
+            color: rgb(174, 0, 255);
+            height: 500px;
+        }
+
+         section div{
+            background-color: rgba(101, 109, 109, 0.575);
+            padding: 5px;
+            margin: 2% 2%;
+            border: 2px solid black;
+            border-radius: 3em;
+            height: 15em;
+            width: 39em;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            
+
+
+         }
+
+         .col-1{
+            grid-area: col-1;
+         }
+
+         section{
+            
+           display: grid;
+           grid-template-columns: 50% 50%;
+           grid-template-rows: repeat(2, 50%);
+           gap: 10px 100px;
+           grid-template-areas: 'col-1 col-2'
+           'col-3 col-4';
+         }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yo</title>
+</head>
+<body>
+   <div id="div">
+   <span id="yur"> hei her er det span 
+
+   </span>
+   <button onclick="changetext()"> ;)</button>
+   <button onclick="changecolor()"> change color</button>
+   <button onclick="changebackground()"> change backgroundcolor</button>
+   </div> 
+<script>
+    
+    function changetext(){
+        document.getElementById('yur').innerHTML = 'knapp tatt på';
+    }
+    function changecolor(){
+        document.getElementById('yur').style.color = 'white';
+    }
+    function changebackground(){
+        document.getElementById('div').style.backgroundColor = 'black';
+    }
+</script>
+</body>
+</html>
