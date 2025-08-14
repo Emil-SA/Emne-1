@@ -1,0 +1,111 @@
+<!-- (4/10 første video og andre vid) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .red{
+        background-color: red;
+    }
+
+
+</style>
+</head>
+<!-- <h1>Introduksjon til JavaScript</h1>
+
+<ol>
+    <li> Finne fram til en HTML-tag</li>
+    <li> Endre HTML</li>
+    <li> Bruke funksjon i <tt> script</li>
+    <li> kalle flere funksjoner</li>
+</ol>
+
+<div id="mydiv"> (tom)</div>
+<button onclick="changedivtext()">Endre tekst</button>
+<button onclick="changedivcolor()">Endre Bakgrunnsfarge</button>
+
+<button onclick="restoredivtext()">Restore tekst</button>
+<button onclick="restoredivcolor()">Restore Bakgrunnsfarge</button> -->
+
+<!-- <div id="output"></div>
+<button onclick="setnum16()">Set number to 16</button>
+<button onclick="setnum47()">Set number to 47</button> -->
+
+<div id="output"></div>
+<button onclick="numup()">+</button>
+<button onclick="numdown()">-</button>
+
+
+
+<body>
+
+<script>
+
+
+/*     function changedivtext(){
+        document.getElementById('mydiv').innerHTML = 'Halla'
+        
+    }
+    function changedivcolor(){
+        document.getElementById('mydiv').classList.add('red')
+    }
+
+    function restoredivtext(){
+        document.getElementById('mydiv').innerHTML = '(tom)'
+        
+    }
+
+     function restoredivcolor(){
+        document.getElementById('mydiv').classList.remove('red')
+    } */
+
+    /* var outputDiv = document.getElementById('output'); */
+    var outputDiv = document.getElementById('output');
+    var numtoshow = 0;
+    var float = numtoshow
+
+
+    function numup(){
+        numtoshow = float +=1;
+        outputDiv.innerHTML = numtoshow;
+    }
+
+    function numdown(){
+
+        numtoshow = float -=1;
+        outputDiv.innerHTML = numtoshow;  
+    }
+
+    function setnum16(){
+          numtoshow = 16;
+          outputDiv.innerHTML = numtoshow;
+    }
+
+   function setnum47(){
+    numtoshow = 47; 
+    outputDiv.innerHTML = numtoshow;    
+    }
+
+
+
+
+
+
+
+ /*    var number = 5; //heltall = int
+    var float = 5.5; //kommaseparert tall
+    var text = "en liten tekstbit"; //string = tekst
+    var enkelttegn = 'a'; //char
+    var booleans = false; //true eller false
+ */
+
+
+
+    
+</script>
+    <!-- src=script.js -->
+</body>
+</html>
