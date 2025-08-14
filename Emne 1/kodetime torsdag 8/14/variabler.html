@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="teksten">Her skal det stå en tekst</div>
+    <button onclick="printNameAndChangeTekst()"></button>
+    <script>
+        let name; 
+        let age = 18;
+        let waterConsumed = false;
+        let nyTekst = 'hei og hå'
+
+
+        name = 'Jon';
+        printname()
+        name = 'Bon';
+        printname()
+        name = 'Yon';
+        
+
+
+        function printname(){
+            console.log(name);
+        }
+
+        function printNameAndChangeTekst(){
+            console.log(name);
+            document.getElementById('teksten').innerHTML = nyTekst
+        }
+    </script>
+</body>
+</html>
